@@ -81,7 +81,7 @@ void get_values(char **const ifaces, int num_ifaces, time_t * const s, ulli * co
 void display(int const unit, int const divisor,
              double b, int const warning, int const critical)
 {
-  char fmtstr[7];
+  char fmtstr[8];
 
   if (critical != 0 && b > critical) {
     printf("<span fallback='true' color='%s'>", RED);
