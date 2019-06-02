@@ -1,0 +1,4 @@
+#!/bin/sh
+
+FOUNDFILES=$(find "${PWD}" -path "*/i3blocks.conf")
+sed -i -e '$a\\' $FOUNDFILES 
